@@ -45,8 +45,10 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./imgs/resource-database-lZKI2P-J2jE-unsplash.jpg);
-  background-size: auto;
+  background: url(./imgs/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: auto;
 }
 
@@ -90,6 +92,12 @@ section {
   transform: scale(1.2);
 }
 
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
 .social-icons a {
   color: azure;
   font-size: 1.9em;
