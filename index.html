@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo">molto</a>
+        <a href="#" class="logo"><img src="./imgs/Screenshot from 2022-10-23 01-08-07.png" alt=""></a>
         <nav class="navigation">
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
@@ -21,7 +21,7 @@
     </header>
     <section class="main">
         <div>
-            <h2>hello, I'am Abdalhman Mgahed<br /><span>web developer</span></h2>
+            <h2>hello, I'am Abdalhman Mgahed<br /><span>front-end developer</span></h2>
             <h3>making art</h3>
             <a href="#projects" class="main-botn">view my work</a>
             <div class="social-icons">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <video src="https://www.youtube.com/watch?v=dvEpb9O34KA" autoplay muted></video>
-        <div>
+        <div class="shout-out">
             Photo by <a
                 href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilya
                 Pavlov</a> on <a
@@ -40,12 +40,28 @@
         </div>
     </section>
     <section class="cards" id="services">
+        <h2 class="title">ABOUT ME</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="info">
+                    <h3>Summary Information</h3>
+                    <p>
+                        I'm a junior Front-End Developer with 2+ years of experience in Design, Development, I have
+                        Extensive Skills in, HTML5, CSS3, and JavaScript, currently learning react.js, Enthusiastic and
+                        self-taught, and willing to learn, and develop in the best possible way in new technologies,
+                        always responsible and committed to my duty.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards" id="services">
         <h2 class="title">services</h2>
         <div class="content">
             <div class="card">
                 <div class="icon"><i class="fas fa-graduation-cap"></i></div>
                 <div class="info">
-                    <h3>script writing</h3>
+                    <h3>psd/xd to code</h3>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
                         reprehenderit magni
@@ -133,30 +149,20 @@
     </section>
     <section class="cards" id="contact">
         <h2 class="title">Contact</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon"><i class="fas fa-envelope"></i></div>
-                <div class="info">
-                    <h3>script writing</h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                        reprehenderit magni
-                    </p>
-                </div>
+        <form action="">
+            <div>
+                <legend id="name">name</legend>
+                <input type="text" for="name">
             </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>E-mail
-                        <a href="#">bodymgahed@yahoo.coom</a>
-                    </h3>
-
-                </div>
+            <div>
+                <legend id="email">email</legend>
+                <input type="email" for="email">
             </div>
-        </div>
+            <div>
+                <legend>message</legend>
+                <textarea type="text" for="message" placeholder="your message"></textarea>
+            </div>
+        </form>
     </section>
 
     <footer class="footer">

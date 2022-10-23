@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.554);
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -17,39 +17,56 @@ header {
   padding: 15px 250px;
 }
 
-.logo {
+.logo img {
   text-decoration: none;
   color: rgb(115, 8, 216);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.9em;
+  font-family: "Poppins" serif;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
 }
 .navigation a {
   text-decoration: none;
   color: blueviolet;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1.25em;
+  font-weight: 700;
+  font-size: 1.5em;
   padding-left: 25px;
 }
 
 .navigation a:hover {
-  color: rgb(182, 120, 28);
+  color: rgb(255, 255, 255);
 }
 
 section {
   padding: 100px 250px;
+}
+.main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./imgs/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+  opacity: 0.75;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .main {
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./imgs/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
-  background-clip: border-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: auto;
+  z-index: 1;
 }
 
 .main h2 {
@@ -61,9 +78,10 @@ section {
 .main h2 span {
   display: inline-block;
   margin-top: 19px;
-  color: blueviolet;
-  font-weight: 500;
+  color: rgb(255, 0, 115);
+  font-weight: 700;
   font-size: 1.5em;
+  font-family: "Poppins" serif;
 }
 .main h3 {
   color: whitesmoke;
@@ -75,7 +93,7 @@ section {
 }
 
 .main-botn {
-  color: black;
+  color: white;
   background-color: rgba(255, 0, 115, 0.712);
   text-decoration: none;
   font-size: 1.1em;
@@ -88,10 +106,24 @@ section {
   transition: 0.9s ease;
 }
 .main-botn:hover {
-  background-color: tomato;
+  background-color: rgba(255, 255, 255, 0.096);
   transform: scale(1.2);
+  color: white;
 }
-
+.shout-out {
+  display: block;
+  color: white;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  font-size: 20px;
+  font-family: "Poppins" serif;
+  font-weight: 100;
+}
+.shout-out a {
+  color: white;
+  text-decoration: none;
+}
 .social-icons {
   display: flex;
   align-items: center;
