@@ -55,11 +55,10 @@ section {
   width: 100%;
   height: 100%;
   background: url(./imgs/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
-  opacity: 0.75;
-  background-clip: border-box;
+  opacity: 0.65;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -10;
 }
 .main {
   width: 100%;
@@ -129,6 +128,7 @@ section {
   align-items: center;
   justify-content: start;
   gap: 30px;
+  margin-left: 30px;
 }
 .social-icons a {
   color: azure;
@@ -165,6 +165,19 @@ section {
   transition-duration: 0.7s;
   flex-direction: column;
 }
+.wide {
+  width: 80%;
+  height: 60%;
+  background-color: rgb(223, 223, 223);
+  font-size: 20px;
+}
+.special {
+  background-image: linear-gradient(
+    310deg,
+    rgb(166 17 83 / 77%),
+    rgb(75 78 180)
+  );
+}
 .card img {
   height: 80%;
 }
@@ -190,7 +203,7 @@ section {
 }
 
 .projects {
-  background-color: black;
+  background-color: #014703b5;
 }
 .projects .title {
   font-size: 2.1em;
