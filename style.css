@@ -15,6 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 250px;
+  margin-top: 0px;
 }
 
 .logo img {
@@ -59,6 +60,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -10;
+  margin-top: 96px;
 }
 .main {
   width: 100%;
@@ -66,6 +68,7 @@ section {
   display: flex;
   align-items: center;
   z-index: 1;
+  /* margin-top: 70px; */
 }
 
 .main h2 {
@@ -203,7 +206,7 @@ section {
 }
 
 .projects {
-  background-color: #014703b5;
+  background-color: #0c6d0fb5;
 }
 .projects .title {
   font-size: 2.1em;
@@ -258,7 +261,12 @@ section {
 .more-details:hover {
   color: azure;
 }
-
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .contact .card {
   display: flex;
   justify-content: center;
@@ -275,6 +283,43 @@ section {
 
 .contact .info p {
   font-size: 1.7em;
+}
+.form-decorator {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  background-color: rgba(243, 243, 243, 0.498);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px #686868;
+}
+.form-decorator input {
+  height: 30px;
+  width: 80%;
+  border-radius: 8px;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+.form-decorator input:focus {
+  outline: none;
+  border: 3px solid red;
+}
+.form-decorator button {
+  width: 40%;
+  height: 25px;
+  border-radius: 14px;
+  color: white;
+  background-color: rgba(255, 0, 115, 0.712);
+  cursor: pointer;
+}
+form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .footer {
   background-color: black;
@@ -299,8 +344,15 @@ section {
   color: blueviolet;
   font-size: 1.1em;
   font-weight: 300;
+  margin-left: 5px;
+}
+:target {
+  scroll-margin-top: 90px;
 }
 @media (max-width: 1023px) {
+  :target {
+    scroll-margin-top: 90px;
+  }
   header {
     padding: 12px 20px;
   }
@@ -332,6 +384,9 @@ section {
 }
 
 @media (max-width: 641px) {
+  :target {
+    scroll-margin-top: 90px;
+  }
   body {
     font-size: 12px;
   }
