@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
 }
+
+.body {
+  width: 100vw;
+}
+
+
 header {
-  background-color: rgba(0, 0, 0, 0.554);
+  background-color: rgba(0, 0, 0, 0.90);
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -16,27 +24,25 @@ header {
   align-items: center;
   padding: 15px 250px;
   margin-top: 0px;
+  max-height: 50px;
 }
 
-.logo img {
+.logo svg {
   text-decoration: none;
   color: rgb(115, 8, 216);
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 1.9em;
-  font-family: "Poppins" serif;
-}
-.logo img {
-  width: 60px;
-  height: 60px;
+  width: 140px;
+  max-height: 40px;
   border-radius: 50px;
+  margin-top: 4px;
 }
+
 .navigation a {
   text-decoration: none;
   color: blueviolet;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1em;
   padding-left: 25px;
 }
 
@@ -47,21 +53,23 @@ header {
 section {
   padding: 100px 250px;
 }
+
 .main::before {
   content: "";
   display: block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -41px;
   width: 100%;
   height: 100%;
   background: url(./imgs/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
-  opacity: 0.65;
+  opacity: 0.75;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -10;
   margin-top: 91px;
 }
+
 .main {
   width: 100%;
   min-height: 100vh;
@@ -77,6 +85,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .main h2 span {
   display: inline-block;
   margin-top: 19px;
@@ -85,6 +94,7 @@ section {
   font-size: 1.5em;
   font-family: "Poppins" serif;
 }
+
 .main h3 {
   color: whitesmoke;
   font-size: 2em;
@@ -107,11 +117,13 @@ section {
   padding: 0.9375em 2.1875em;
   transition: 0.9s ease;
 }
+
 .main-botn:hover {
   background-color: rgba(255, 255, 255, 0.096);
   transform: scale(1.2);
   color: white;
 }
+
 .shout-out {
   display: block;
   color: white;
@@ -122,10 +134,12 @@ section {
   font-family: "Poppins" serif;
   font-weight: 100;
 }
+
 .shout-out a {
   color: white;
   text-decoration: none;
 }
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -133,6 +147,7 @@ section {
   gap: 30px;
   margin-left: 30px;
 }
+
 .social-icons a {
   color: azure;
   font-size: 1.9em;
@@ -155,6 +170,10 @@ section {
   flex-wrap: wrap;
 }
 
+.cards {
+  height: 650px;
+}
+
 .card {
   display: flex;
   background-color: white;
@@ -168,19 +187,21 @@ section {
   transition-duration: 0.7s;
   flex-direction: column;
 }
+
 .wide {
   width: 80%;
   height: 60%;
   background-color: rgb(223, 223, 223);
   font-size: 20px;
 }
+
 .special {
-  background-image: linear-gradient(
-    310deg,
-    rgb(166 17 83 / 77%),
-    rgb(75 78 180)
-  );
+  background-image: linear-gradient(310deg,
+      rgb(166 17 83 / 77%),
+      rgb(75 78 180));
+  margin-top: 35px;
 }
+
 .card img {
   height: 80%;
 }
@@ -188,12 +209,14 @@ section {
 .card:hover {
   transform: scale(1.22);
 }
+
 .icon {
   color: black;
   font-size: 3em;
   font-weight: 100;
   text-align: center;
 }
+
 .info {
   text-align: center;
 }
@@ -207,7 +230,9 @@ section {
 
 .projects {
   background-color: #0c6d0fb5;
+  opacity: 0.80;
 }
+
 .projects .title {
   font-size: 2.1em;
   color: white;
@@ -228,15 +253,19 @@ section {
   margin: 20px;
   transition: 0.7s ease;
 }
+
 .projects-card:hover {
   transform: scale(1.17);
 }
+
 .projects-card:hover .projects-img {
   opacity: 0.7;
 }
+
 .projects-img img {
   width: 100%;
 }
+
 .projects-info {
   padding: 1em;
 }
@@ -258,15 +287,18 @@ section {
   text-decoration: none;
   color: aqua;
 }
+
 .more-details:hover {
   color: azure;
 }
+
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .contact .card {
   display: flex;
   justify-content: center;
@@ -284,6 +316,7 @@ section {
 .contact .info p {
   font-size: 1.7em;
 }
+
 .form-decorator {
   display: flex;
   width: 800px;
@@ -294,6 +327,7 @@ section {
   justify-content: space-evenly;
   box-shadow: 5px 5px #686868;
 }
+
 .form-decorator input {
   height: 30px;
   width: 80%;
@@ -301,10 +335,12 @@ section {
   border: 2px solid black;
   padding: 5px 10px;
 }
+
 .form-decorator input:focus {
   outline: none;
   border: 3px solid red;
 }
+
 .form-decorator button {
   width: 40%;
   height: 25px;
@@ -313,6 +349,7 @@ section {
   background-color: rgba(255, 0, 115, 0.712);
   cursor: pointer;
 }
+
 form {
   display: flex;
   width: 100%;
@@ -321,6 +358,7 @@ form {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .footer {
   background-color: black;
   color: white;
@@ -332,6 +370,7 @@ form {
   justify-content: center;
   align-items: center;
 }
+
 .footer-title {
   color: white;
   font-size: 1.5em;
@@ -346,13 +385,16 @@ form {
   font-weight: 300;
   margin-left: 5px;
 }
+
 :target {
   scroll-margin-top: 90px;
 }
+
 @media (max-width: 1023px) {
   :target {
     scroll-margin-top: 90px;
   }
+
   header {
     padding: 12px 20px;
   }
@@ -387,6 +429,7 @@ form {
   :target {
     scroll-margin-top: 90px;
   }
+
   body {
     font-size: 12px;
   }
@@ -404,6 +447,7 @@ form {
   body {
     font-size: 10px;
   }
+
   .card a {
     text-decoration: none;
   }
