@@ -325,7 +325,7 @@ section {
   border-radius: 8px;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: 5px 5px #686868;
+  box-shadow: 5px 5px #b8b8b8;
 }
 
 .form-decorator input {
