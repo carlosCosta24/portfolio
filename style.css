@@ -24,18 +24,20 @@ header {
   align-items: center;
   padding: 15px 250px;
   margin-top: 0px;
-  max-height: 50px;
+  max-height: 100px;
 }
 
-.logo svg {
-  text-decoration: none;
-  color: rgb(115, 8, 216);
-  font-size: 1.9em;
-  width: 140px;
-  max-height: 40px;
-  border-radius: 50px;
+.logo img {
+  background-color: white;
+  width: 75px;
+  max-height: 75px;
+  border-radius: 70px;
   margin-top: 4px;
+  object-fit: cover;
+
 }
+
+#carlos-logo {}
 
 .navigation a {
   text-decoration: none;
@@ -59,9 +61,9 @@ section {
   display: block;
   position: absolute;
   left: 0;
-  top: -41px;
+  top: -1px;
   width: 100%;
-  height: 100%;
+  height: 92%;
   background: url(./imgs/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
   opacity: 0.75;
   background-size: cover;
